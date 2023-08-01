@@ -11,6 +11,9 @@ export const generateData = () => {
   const titlesData = [];
   const creditsData = [];
 
+  // In this case, it was divided into correct and incorrect dates in order to make it more convenient to read the CSV file,
+  // if necessary. This will not affect the testing functionality
+
   for (let i = 1; i <= COUNT_OF_CORRECT_DATA; i++) {
     titlesData.push(generateCorrectTitle(i));
     creditsData.push(generateCorrectCredit(i));
